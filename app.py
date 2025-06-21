@@ -18,14 +18,14 @@ def home():
 def predict_web():
     text = request.form.get("text")
     if not text:
-        return render_template("index.html", prediction="⚠️ Please enter text.")
+        return render_template("index.html", prediction="⚠️ Please enter text.", text="")
 
     # Vectorize input
     vector = vectorizer.transform([text])
     pred = model.predict(vector)[0]
 
     label = "Fake News 📰❌" if pred == 0 else "Real News 📰✅"
-    return render_template("index.html", prediction=label)
+    return render_template("index.html", prediction=label, text=text)
 
 if __name__ == "__main__":
     app.run(debug=True)

@@ -34,7 +34,7 @@
 <body>
     <h1>Fake News Detector</h1>
     <form action="/predict_web" method="post">
-        <textarea name="text" placeholder="Enter news text here..." required></textarea><br>
+        <textarea name="text" placeholder="Enter news text here..." required>{{ text or '' }}</textarea><br>
         <button type="submit">Predict</button>
     </form>
 
