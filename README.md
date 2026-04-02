@@ -99,6 +99,42 @@ Go to: [http://127.0.0.1:5000](http://127.0.0.1:5000)
 
 ---
 
+cat >> README.md << 'EOF'
+
+---
+
+## 🐳 Run with Docker
+```bash
+docker pull ghcr.io/neuroraptor/fakenewsdetect:latest
+docker run -p 5000:5000 ghcr.io/neuroraptor/fakenewsdetect:latest
+```
+
+Then open [http://localhost:5000](http://localhost:5000)
+
+---
+
+## 📊 Model Results
+
+### Classical Models
+
+| Model | Accuracy | F1 Score |
+|-------|----------|----------|
+| **SVM** ⭐ (deployed) | **86.52%** | **86.41%** |
+| Random Forest | 86.14% | 86.13% |
+| Logistic Regression | 85.53% | 85.53% |
+| Naive Bayes | 80.94% | 80.01% |
+
+### Deep Learning & Transformer
+
+| Model | Test Accuracy | Notes |
+|-------|--------------|-------|
+| CNN | 84.91% | Early stopping at epoch 11 |
+| LSTM | 84.74% | Early stopping at epoch 11 |
+| BERT (fine-tuned) | 76.00% | Underperformed on binary task |
+
+> Trained on 73,265 articles across LIAR, FakeNewsNet, and ISOT datasets.
+EOF
+---
 ## 🔧 Technologies Used
 
 - Python
@@ -122,3 +158,4 @@ Go to: [http://127.0.0.1:5000](http://127.0.0.1:5000)
 This web application was created as part of a **Capstone Project** under the guidance of **Dr. Hoomera Noor**.
 
 ---
+
