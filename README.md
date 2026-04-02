@@ -9,7 +9,8 @@
 ## 🌐 Live Demo
 
 🚀 Try the live app here:  
-👉 [https://detectfakenews-gkm5.onrender.com](https://detectfakenews-gkm5.onrender.com)
+👉 [https://fakenewsdetect-yhif.onrender.com](https://fakenewsdetect-yhif.onrender.com/)
+
 
 ---
 
