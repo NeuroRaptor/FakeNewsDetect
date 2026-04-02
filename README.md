@@ -9,7 +9,7 @@
 ## 🌐 Live Demo
 
 🚀 Try the live app here:  
-👉 [https://detectfakenews-gkm5.onrender.com](https://detectfakenews-gkm5.onrender.com)
+👉 [https://fakenewsdetect-yhif.onrender.com](https://fakenewsdetect-yhif.onrender.com)
 
 ---
 
@@ -55,7 +55,13 @@ FakeNewsDetect/
 ├── app.py                        # Flask app entry point
 ├── requirements.txt              # Dependencies
 ├── .gitignore
-└── venv/                         # Virtual environment (optional)
+├── Dockerfile
+├── .dockerignore
+├── .python-version
+├── FakeNewsDetect.code-workspace
+└── .github/
+    └── workflows/
+        └── docker-build.yml  # CI/CD pipeline
 ```
 
 ---
