@@ -1,3 +1,5 @@
+![Docker Build & Push](https://github.com/NeuroRaptor/FakeNewsDetect/actions/workflows/docker-build.yml/badge.svg)
+
 
 # 📰 Fake News Detection — Deployment
 
